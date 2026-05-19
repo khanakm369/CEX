@@ -1,0 +1,127 @@
+trading-ui/
+├── public/
+│
+├── src/
+│   ├── assets/                     # Images, icons, logos
+│   │   └── logo.png
+│   │
+│   ├── components/                # Reusable UI components
+│   │   ├── common/
+│   │   │   ├── Button.jsx
+│   │   │   ├── Input.jsx
+│   │   │   ├── Card.jsx
+│   │   │   ├── Modal.jsx
+│   │   │   └── Loader.jsx
+│   │   │
+│   │   ├── layout/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Sidebar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   └── ProtectedRoute.jsx
+│   │   │
+│   │   └── charts/
+│   │       └── StockChart.jsx
+│   │
+│   ├── features/                  # Feature-based modules
+│   │
+│   │   ├── auth/
+│   │   │   ├── pages/
+│   │   │   │   ├── SignIn.jsx
+│   │   │   │   └── SignUp.jsx
+│   │   │   │
+│   │   │   ├── components/
+│   │   │   │   └── AuthForm.jsx
+│   │   │   │
+│   │   │   ├── services/
+│   │   │   │   └── authApi.js
+│   │   │   │
+│   │   │   └── store/
+│   │   │       └── authStore.js
+│   │   │
+│   │   ├── ticker/
+│   │   │   ├── pages/
+│   │   │   │   └── TickerPage.jsx
+│   │   │   │
+│   │   │   ├── components/
+│   │   │   │   ├── StockList.jsx
+│   │   │   │   └── StockCard.jsx
+│   │   │   │
+│   │   │   ├── services/
+│   │   │   │   └── tickerApi.js
+│   │   │   │
+│   │   │   └── store/
+│   │   │       └── tickerStore.js
+│   │   │
+│   │   ├── stock/
+│   │   │   ├── pages/
+│   │   │   │   └── StockDetails.jsx
+│   │   │   │
+│   │   │   ├── components/
+│   │   │   │   ├── BuySellForm.jsx
+│   │   │   │   └── PriceChart.jsx
+│   │   │   │
+│   │   │   └── services/
+│   │   │       └── stockApi.js
+│   │   │
+│   │   ├── portfolio/
+│   │   │   ├── pages/
+│   │   │   │   └── PortfolioPage.jsx
+│   │   │   │
+│   │   │   ├── components/
+│   │   │   │   ├── HoldingsList.jsx
+│   │   │   │   └── EquitySummary.jsx
+│   │   │   │
+│   │   │   └── services/
+│   │   │       └── portfolioApi.js
+│   │   │
+│   │   ├── wallet/
+│   │   │   ├── pages/
+│   │   │   │   └── AddBalancePage.jsx
+│   │   │   │
+│   │   │   ├── components/
+│   │   │   │   └── AddBalanceForm.jsx
+│   │   │   │
+│   │   │   └── services/
+│   │   │       └── walletApi.js
+│   │   │
+│   │   └── history/
+│   │       ├── pages/
+│   │       │   └── TransactionHistory.jsx
+│   │       │
+│   │       ├── components/
+│   │       │   ├── TransactionList.jsx
+│   │       │   └── Pagination.jsx
+│   │       │
+│   │       └── services/
+│   │           └── historyApi.js
+│   │
+│   ├── pages/                     # Optional top-level pages
+│   │   ├── Home.jsx
+│   │   └── NotFound.jsx
+│   │
+│   ├── services/                  # Shared API setup
+│   │   ├── axiosInstance.js
+│   │   └── endpoints.js
+│   │
+│   ├── store/                     # Global stores
+│   │   └── index.js
+│   │
+│   ├── hooks/                     # Custom hooks
+│   │   ├── useAuth.js
+│   │   └── useDebounce.js
+│   │
+│   ├── utils/                     # Helper functions
+│   │   ├── formatCurrency.js
+│   │   └── constants.js
+│   │
+│   ├── router/
+│   │   └── AppRouter.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .env
+├── package.json
+├── vite.config.js
+└── README.md
