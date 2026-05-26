@@ -24,3 +24,14 @@ Write some hello world code and try to do this
 - Security Authentication
 - Dependency Injection
 - Testing 100% Coverage
+
+pip install motor
+pip install fastapi uvicorn motor python-jose passlib[bcrypt] email-validator pydantic-settings python-dotenv
+
+
+Now to dockerise
+
+create 
+- Dockerfile
+- .dockerignore
+-docker-compose.yaml

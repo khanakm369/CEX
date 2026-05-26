@@ -1,0 +1,63 @@
+server/
+├── app/
+│   ├── main.py                    # Entry point of FastAPI app
+│   │
+│   ├── core/                      # Global configuration
+│   │   ├── config.py              # Environment variables/settings
+│   │   ├── security.py            # JWT, password hashing
+│   │   └── database.py            # SQLAlchemy engine and session
+│   │
+│   ├── models/                    # SQLAlchemy models
+│   │   ├── user.py
+│   │   ├── stock.py
+│   │   ├── portfolio.py
+│   │   ├── transaction.py
+│   │   └── wallet.py
+│   │
+│   ├── schemas/                   # Pydantic request/response schemas
+│   │   ├── user.py
+│   │   ├── auth.py
+│   │   ├── stock.py
+│   │   ├── portfolio.py
+│   │   ├── transaction.py
+│   │   └── wallet.py
+│   │
+│   ├── routers/                   # API route definitions
+│   │   ├── auth.py                # /auth/signup, /auth/signin
+│   │   ├── users.py
+│   │   ├── stocks.py              # /stocks
+│   │   ├── portfolio.py           # /portfolio
+│   │   ├── wallet.py              # /wallet/add-balance
+│   │   └── transactions.py        # /transactions/history
+│   │
+│   ├── services/                  # Business logic
+│   │   ├── auth_service.py
+│   │   ├── stock_service.py
+│   │   ├── portfolio_service.py
+│   │   ├── wallet_service.py
+│   │   └── transaction_service.py
+│   │
+│   ├── repositories/              # Database access layer
+│   │   ├── user_repository.py
+│   │   ├── stock_repository.py
+│   │   ├── portfolio_repository.py
+│   │   ├── wallet_repository.py
+│   │   └── transaction_repository.py
+│   │
+│   ├── dependencies/              # Reusable dependencies
+│   │   └── auth.py                # get_current_user
+│   │
+│   ├── utils/                     # Helper functions
+│   │   ├── constants.py
+│   │   └── helpers.py
+│   │
+│   └── tests/                     # Unit/integration tests
+│       ├── test_auth.py
+│       ├── test_stocks.py
+│       └── test_portfolio.py
+│
+├── alembic/                       # Database migrations
+├── .env                           # Environment variables
+├── .gitignore
+├── requirements.txt
+└── README.md
